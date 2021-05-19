@@ -1,0 +1,19 @@
+routes:
+  /:
+    data: 
+      page: page.home
+    template: home
+  /sobre-mi/:
+    data: page.sobre-mi
+    template: page-about
+  /contacto/: 
+    data: page.contacto
+    template: contact
+
+collections:
+  /blog/:
+    permalink: /blog/{slug}/
+    template: index
+    
+taxonomies:
+  tag: /tag/{slug}/

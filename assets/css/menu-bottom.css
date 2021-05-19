@@ -1,0 +1,14 @@
+/* Styles for /partials/menu-bottom.hbs */
+
+.menu-bottom {
+  padding: 60px 0px;
+  
+  & ul {
+    display: inline-flex;
+    list-style: none;
+
+    & li {
+      margin: 0px 8px;
+    }
+  }
+}

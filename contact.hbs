@@ -1,0 +1,43 @@
+{{!< default}} {{> site-nav}}
+  {{#page}}
+  <main>
+    <section>
+      <div class="inner">
+        <div class="main-wrapper page-title">
+          <h1>Contacta conmigo</h1>
+        </div>
+        <div class="wrapper">
+          <div>
+            <p>
+              Puedes ponerte en contacto conmigo rellenando el siguiente formulario.
+              En el campo <b>mensaje</b> te agradecería que pusieras <b>toda la información</b>
+              posible para que mi respuesta sea lo mas acertada.
+            </p>
+            <p>
+              O tal vez quieras escribirme a traves de Twitter
+            </p>
+            <p>
+              Escríbeme si estas interesado en mis servicios, si tienes alguna duda o simplemente si quieres saludarme.
+              Una vez reciba tu mensaje, no tardare mucho en responderte. 👍
+            </p>
+          </div>
+          <div class="contact-form">
+            <h2>Formulario de contacto</h2>
+            <form action="https://formspree.io/moqewooe" method="POST">
+              <hr>
+              <label>
+                <input id="fname" type="text" placeholder="Nombre" required="">
+              </label>
+              <label>
+                <input type="email" name="_replyto" placeholder="Correo" required="">
+              </label>
+              <label>
+                <textarea name="message" placeholder="Mensaje" required=""></textarea>
+              </label>
+              <button class="button" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+    </section>
+  </main>
+  {{/page}}

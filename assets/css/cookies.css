@@ -1,0 +1,17 @@
+.cookies {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  background-color: var(--bg-gray);
+  & p {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      width: 22%;
+      bottom: 30px;
+      left: 30px;
+    }
+  }
+}

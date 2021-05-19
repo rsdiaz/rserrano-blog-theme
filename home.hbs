@@ -1,0 +1,89 @@
+{{!< default}}
+
+{{> site-nav}}
+  {{#page}}
+  <main>
+    <section>
+      <div class="inner">
+        <div class="main-wrapper">
+          <div>
+            <h3>¡Bienvenid@s!</h3>
+            <h1>Roberto Serrano Diaz-Grande</h1>
+            <h2>Desarrollador Web FullStack</h2>
+            <p>
+              Apasionado de las tecnologías web, el desarrollo y la seguridad informática.
+              Entusiasta de HTML, CSS, JavaScript, Node, Vue, etc... Comparto mi aprendizaje y conocimiento a traves
+              de mi blog, en el cual publico artículos sobre desarrollo web y mi día a día tecnológico.
+            </p>
+          </div>
+          <div>
+            <img src="https://res.cloudinary.com/rserrano/image/upload/ar_1:1,b_rgb:262c35,c_fill,e_bgremoval,g_auto,r_max,w_400/v1611340481/blog/IMG_0206_ezq1zj.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper" style="text-align: center;">
+      {{> social}}
+      {{> menu-bottom}}
+{{!--       <div class="inner grid-main">
+        <div class="grid-section">
+          <h2>¿Qué tipo de artículos puedes encontraras en mi blog?</h2>
+          <p>
+            En mi blog escribo artículos sobre tecnologías web y su desarrollo, encontraras artículos sobre: HTML, CSS,
+            JavaScript, Node, herramientas de desarrollo, frameworks
+            o artículos sobre mi dia a dia en esto de la tecnología.
+          </p>
+          <p>
+            Si te gusta el desarrollo web, los servidores y la tecnología en general, creo que te gustara
+            mi sitio web.
+          </p>
+          <div class="flex-gallery mt-mb">
+            {{> tag-card title="HTML / CSS"
+            img="https://res.cloudinary.com/rserrano/image/upload/v1616834445/blog/450_1000_tvqfxg.jpg"}}
+            {{> tag-card title="JavaScript"
+            img="https://res.cloudinary.com/rserrano/image/upload/v1616834445/blog/450_1000_tvqfxg.jpg"}}
+            {{> tag-card title="Node"
+            img="https://res.cloudinary.com/rserrano/image/upload/v1616834445/blog/450_1000_tvqfxg.jpg"}}
+            {{> tag-card title="GNU/Linux"
+            img="https://res.cloudinary.com/rserrano/image/upload/v1616834445/blog/450_1000_tvqfxg.jpg"}}
+            {{> tag-card title="NAS"
+            img="https://res.cloudinary.com/rserrano/image/upload/v1616834445/blog/450_1000_tvqfxg.jpg"}}
+            {{> tag-card title="Dev Tools"
+            img="https://res.cloudinary.com/rserrano/image/upload/v1616834445/blog/450_1000_tvqfxg.jpg"}}
+          </div>
+          <button class="button">
+            Ir al blog
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </i>
+          </button>
+          <h2>Mantente informado</h2>
+          <p>
+            No te pierdas ninguno de los artículos del blog. Si te gusta el desarrollo web y
+            no te importa recibir contenido gratuito y de calidad en tu buzón, suscribete.
+          </p>
+          {{> suscribe-form-inline}}
+          <h2>Contacta conmigo</h2>
+          <p>Para contactar conmigo, puedes hacerlo accediendo a la pagina de <a href="/contacto">contacto</a> y
+            rellenando el formulario.
+          </p>
+          <p>
+            También puedes escribirme a traves <a href="https://twitter.com/Rovbeat">Twitter</a>.
+          </p>
+        </div>
+        <div class="grid-sidebar">
+          <h2>Últimos artículos</h2>
+          {{#get "posts" limit="2" include="tags" as |posts|}}
+          {{#foreach posts}}
+          {{> "card"}}
+          {{/foreach}}
+          {{/get}}
+        </div>
+      </div> --}}
+    </section>
+  </main>
+  {{/page}}

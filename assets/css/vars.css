@@ -1,0 +1,19 @@
+:root {
+  --color: #252f38;
+  --bg-white: #fbfbfb;
+  --bg-gray: #fff;
+  --bg-light-overlay: hsla(0, 0%, 100%, 0.4);
+  --link-color: #2f6852;
+  --link-color-hover: #59ad84;
+  --border-color: #dbdbdb;
+}
+
+.dark-mode {
+  --color: #faf0e3;
+  --bg-white: #282c35;
+  --bg-gray: #2e3440;
+  --bg-light-overlay: rgba(62, 62, 62, 0.85);
+  --link-color-hover: #59ad84;
+  --link-color: #2bcc8e;
+  --border-color: #404040;
+}

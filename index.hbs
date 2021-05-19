@@ -1,0 +1,48 @@
+{{!< default}} {{> site-nav}}
+
+  <main class="blog-template">
+    <section class="wrapper">
+      <div class="inner grid-main">
+        <div class="grid-section">
+          <h1>Bienvenid@s a mi Blog</h1>
+          <p>
+            En mi blog escribo artículos sobre tecnologías web y su desarrollo, encontraras artículos sobre: HTML, CSS,
+            JavaScript, Node, herramientas de desarrollo, frameworks
+            o artículos sobre mi dia a dia en esto de la tecnología.
+          </p>
+          <p>
+            Si te gusta el desarrollo web, los servidores y la tecnología en general, creo que te gustara
+            mi sitio web.
+          </p>
+          <div class="blog-grid">
+            {{#foreach posts}}
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "blog-card"}}
+            {{/foreach}}
+          </div>
+          {{pagination}}
+          {{> suscribe-form-inline}}
+          {{> social}}
+          <h2>Contacta conmigo</h2>
+          <p>Para contactar conmigo, puedes hacerlo accediendo a la pagina de <a href="/contacto">contacto</a> y
+            rellenando el formulario.
+          </p>
+          <p>
+            También puedes escribirme a traves <a href="https://twitter.com/Rovbeat">Twitter</a>.
+          </p>
+        </div>
+        <div class="grid-sidebar">
+          <div class="wrapper">
+            {{> widget-sidebar-tags}}
+            {{> widget-sidebar-profile}}
+{{!--             <div class="widget border widget-newsletter">
+              <p>✉️ Suscribete</p>
+            </div>
+            <div class="border widget-image-background">
+              <p>Mi GitHub</p>
+            </div> --}}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>

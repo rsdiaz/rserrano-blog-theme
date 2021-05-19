@@ -1,0 +1,16 @@
+/* Styles for /partials/social.hbs */
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 60px 0px;
+
+  & a {
+    color: currentColor;
+  }
+
+  & svg {
+    margin: 0px 8px;
+  }
+}

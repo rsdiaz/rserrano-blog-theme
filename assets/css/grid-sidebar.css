@@ -1,0 +1,20 @@
+.grid-sidebar {
+  grid-area: grid-sidebar;
+  padding: 80px 30px;
+  & .wrapper {
+    & h2 {
+      text-align: center;
+    }
+    & a.sidebar-tag {
+      display: flex;
+      color: var(--color);
+      & h6 {
+        flex: 1;
+        margin: 0;
+      }
+      &:hover {
+        color: var(--link-color-hover);
+      }
+    }
+  }
+}

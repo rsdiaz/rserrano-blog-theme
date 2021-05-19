@@ -1,0 +1,14 @@
+<div>
+  <a href="{{url}}" class="blog-card">
+    <div class="thumb" style="background-image: url({{img_url feature_image}});">
+    </div>
+    <article>
+      <span><time datetime="{{date format=" YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time></span>
+      <h1>{{title}}</h1>
+      <p>
+        {{excerpt characters="140"}}
+      </p>
+      <span>{{tags limit="1" autolink="false"}}</span>
+    </article>
+  </a>
+</div>

@@ -1,0 +1,121 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--color);
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 1.9rem;
+}
+
+a {
+  color: var(--link-color);
+  &:hover {
+    color: var(--link-color-hover);
+  }
+}
+
+pre {
+  overflow-x: auto;
+  margin: 1.5em 0 3em;
+  padding: 20px;
+  max-width: 100%;
+  border: 1px solid #000;
+  color: #e5eff5;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  background: #242424;
+  border-radius: 5px;
+}
+
+blockquote {
+  padding: 12px;
+  background: var(--bg-gray);
+  border-left: 3px solid var(--link-color);
+  border-radius: 2px;
+
+  & p {
+    font-size: inherit;
+    font-style: italic;
+  }
+}
+
+input[type="button"] {
+  border: none;
+}
+
+main.blog-template,
+main.post-template {
+  & .grid-section {
+    padding-top: 8rem;
+  }
+}
+
+.post-template {
+  & .grid-section {
+    padding-top: 8rem;
+
+    & .post-meta {
+      font-size: 1.2rem;
+      color: var(--link-color);
+
+      & date,
+      & a {
+        text-transform: uppercase;
+        font-weight: bolder;
+      }
+    }
+
+    & .post-full-image {
+      & img {
+        margin: 2rem 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      & .post-full-image {
+        & img {
+          margin: 4rem 0;
+        }
+      }
+    }
+  }
+}
+
+.widget-newsletter {
+  text-align: center;
+  & p {
+    margin: 0;
+    padding: 12px;
+  }
+}
+
+.widget-image-background {
+  background: url('https://res.cloudinary.com/rserrano/image/upload/v1620924257/blog/banner_github_tjq8q0.jpg');
+  background-size: cover;
+  & p {
+    margin: 0;
+    padding: 12px;
+  }
+}
+
+.widget-related-posts {
+  & h3 {
+    text-align: center;
+  }
+}
+
+.page-sobre-mi,
+.page-contacto {
+  & .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 28px;
+
+    & figure {
+      margin-bottom: 38px;
+    }
+  }
+}

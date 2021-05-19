@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="inner">
+    <div class="site-header-wrapper">
+      <nav class="site-top-nav">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i>{{> "icons/menu"}}</i>
+        </span>
+        <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+        {{#if @site.navigation}}
+        {{navigation}}
+        {{/if}}
+        <div class="top-social-links-responsive" id="js-top-social-links">
+          {{> social-links}}
+          <i class="icon-dark">{{> "icons/sun"}}</i>
+          <i class="icon-light">{{> "icons/moon"}}</i>
+        </div>
+      </nav>
+      <div class="top-social-links">
+        {{> social-links}}
+        <i class="icon-dark">{{> "icons/sun"}}</i>
+        <i class="icon-light">{{> "icons/moon"}}</i>
+      </div>
+    </div>
+  </div>
+</header>

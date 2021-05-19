@@ -1,0 +1,20 @@
+{{#get "posts" filter="primary_tag:{{primary_tag.slug}}+id:-{{id}}" limit="2" include="tags" as |
+related_posts |}}
+{{#if related_posts}}
+<div class="widget border widget-related-posts">
+  <header>
+    {{#../primary_tag}}
+    <h3>Artículos relacionados sobre {{name}}</h3>
+    {{/../primary_tag}}
+    {{> wave}}
+  </header>
+  <section>
+    <ul>
+      {{#foreach related_posts}}
+      <li><a href="">{{title}}</a></li>
+      {{/foreach}}
+    </ul>
+  </section>
+</div>
+{{/if}}
+{{/get}}

@@ -1,0 +1,20 @@
+<div class="widget border">
+  <header>
+    <h2>Categorías</h2>
+    {{> wave}}
+  </header>
+  <section>
+    {{#get "tags" include='count.posts'}}
+    <ul>
+      {{#foreach tags}}
+      <li>
+        <a href="{{url}}" title="{{name}}" class="sidebar-tag">
+          <h6>{{name}}</h6>
+          <div>({{count.posts}})</div>
+        </a>
+      </li>
+      {{/foreach}}
+    </ul>
+    {{/get}}
+  </section>
+</div>

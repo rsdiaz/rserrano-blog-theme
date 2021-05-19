@@ -1,0 +1,12 @@
+{{#if @site.facebook}}
+<a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Github" target="_blank"
+  rel="noopener">Github</a>
+{{/if}}
+<a class="social-link" href="https://github.com/rsdiaz/" title="Github" target="_blank" rel="noopener">{{>
+  "icons/github"}}</a>
+{{#if @site.twitter}}
+<a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank"
+  rel="noopener"><i>{{> "icons/twitter"}}</i></a>
+{{/if}}
+<a class="social-link" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank"
+  rel="noopener">{{> "icons/rss"}}</a>

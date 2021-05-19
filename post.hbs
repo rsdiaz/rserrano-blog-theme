@@ -1,0 +1,59 @@
+{{!< default}} {{> site-nav}}
+
+  {{#post}}
+
+  <main>
+    <section class="wrapper">
+      <div class="inner grid-main">
+        <div class="grid-section">
+          {{#if primary_tag}}
+          {{#primary_tag}}
+          <p class="post-meta">
+            <date>{{date}}</date> | <a href="{{url}}">{{name}}</a>
+          </p>
+          {{/primary_tag}}
+          {{/if}}
+          <h1>{{title}}</h1>
+          {{#if custom_excerpt}}
+          <p class="custom-excerpt">{{custom_excerpt}}</p>
+          {{/if}}
+          {{#if feature_image}}
+          <figure class="post-full-image">
+            {{!-- This is a responsive image, it loads different sizes depending on device
+            https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+            <img src="{{img_url feature_image}}" alt="{{title}}" />
+          </figure>
+          {{/if}}
+          {{content}}
+          {{> suscribe-form-inline}}
+          <h2>Contacta conmigo</h2>
+          <p>Para contactar conmigo, puedes hacerlo accediendo a la pagina de <a href="/contacto">contacto</a> y
+            rellenando el formulario.
+          </p>
+          <p>
+            También puedes escribirme a traves <a href="https://twitter.com/Rovbeat">Twitter</a>.
+          </p>
+        </div>
+        <div class="grid-sidebar">
+          <div class="wrapper">
+            <div class="widget border">
+              <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7052348842907968"
+                crossorigin="anonymous"></script>
+              <!-- robertoserrano.pro -->
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7052348842907968"
+                data-ad-slot="4758598318" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            {{> widget-sidebar-tags}}
+            {{> widget-sidebar-profile}}
+            {{> widget-related-post}}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{/post}}

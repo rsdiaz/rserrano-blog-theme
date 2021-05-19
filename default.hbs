@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}" data-theme="dark-mode">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{meta_title page=(t " (Page %)")}}</title>
+
+  <link rel="stylesheet" type="text/css" href="{{asset "built/style.css"}}" />
+  <script>
+    let html = document.querySelector('html')
+    if (localStorage.getItem('selected-theme') !== null) {
+      if (localStorage.getItem('selected-theme') == 'dark') {
+        html.classList.add('dark-mode')
+      }
+      if (localStorage.getItem('selected-theme') == 'light') {
+        html.classList.add('light-mode')
+      }
+    } else {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        console.log('modo noche por defecto')
+        html.classList.add('dark-mode')
+      } else {
+        html.classList.add('light-mode')
+      }
+    }
+  </script>
+  {{ghost_head}}
+
+</head>
+
+<body class="{{body_class}}">
+  {{{body}}}
+
+  <footer>
+    <div class="inner">
+      <p>
+        By <a href="{{@site.url}}">{{@site.title}}</a> con 💖 para el 🌍 &copy; {{date format="YYYY"}}
+      </p>
+    </div>
+  </footer>
+  {{> cookies}}
+  <script src="{{asset "built/cookies.js"}}" async></script>
+  <script src="{{asset "built/main.js"}}" async></script>
+  {{ghost_foot}}
+</body>
+
+</html>
